@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Morn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function searchURL() {
+                window.location="https://duckduckgo.com/?q=" + String(document.getElementById("searchTxt").value);
+                document.getElementById("searchTxt").value = ''
+            }
+        </script>
+
+        <style>
+            body {
+                background-color: rgb(38, 43, 53);
+                background-image: url("bg.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-left: 15%;
+                margin-right: 15%;
+                text-align: center;
+                font-family: consolas;
+                font-size: 1.2em;
+                }
+            a {
+                color: rgb(49, 200, 125);
+                text-decoration: none;
+                }
+            a:hover {
+                color: rgb(138, 253, 196);
+                }
+            #logo {
+                width: 10%;
+                display: inline-block;
+                margin: 6%;
+                }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-row-gap: 6ch;
+                grid-column-gap: 5ch;
+                }
+            .grid-item {
+                color: rgb(49, 200, 125);
+                font-size: 1.5em;
+                display: inline-block;
+                grid-column-start: 1;
+                grid-column-end: 1;
+                }
+            .item1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .item2 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+            }
+            .item3 {
+                grid-column-start: 3;
+                grid-column-end: 3;
+            }
+            .grid-item-title {
+                text-align: center;
+                color: rgb(140, 239, 222);
+                font-size: 2.5em;
+                font-family: Impact;
+                display: inline-block;
+                padding-bottom: 10%;
+                border-bottom: 0.15ch solid rgb(158, 65, 242);
+                }
+            .searchField {
+                display: inline-block;
+                background: transparent;
+                border-bottom: 0.1ch solid rgb(255, 136, 0);
+                color:white;
+                width: 45%;
+                font-size: 1.5em;
+                font-family: consolas;
+                margin-top: 10%;
+                padding-bottom: 0.75ch;
+                }
+            input {
+                border: none;
+                }
+        </style>
+    </head>
+
+    <body>
+        <img id="logo" src="logo_white.svg">
+
+        <div class="grid-container">
+            <div class="grid-item-title">Media</div>
+            <div class="grid-item-title">Forums & Socials</div>
+            <div class="grid-item-title">Misc</div>
+
+
+            <div class="grid-item item1"><a href="https://lblend.moe" target="_blank">Website1</a></div>
+            <div class="grid-item item2"><a href="https://lblend.moe" target="_blank">Website2</a></div>
+            <div class="grid-item item3"><a href="https://lblend.moe" target="_blank">Website3</a></div>
+
+            <div class="grid-item item1"><a href="https://lblend.moe" target="_blank">Website4</a></div>
+            <div class="grid-item item2"><a href="https://lblend.moe" target="_blank">Website5</a></div>
+            <div class="grid-item item3"><a href="https://lblend.moe" target="_blank">Website6</a></div>
+
+            <div class="grid-item item1"><a href="https://lblend.moe" target="_blank">Website7</a></div>
+            <div class="grid-item item2"><a href="https://lblend.moe" target="_blank">Website8</a></div>
+            <div class="grid-item item3"><a href="https://lblend.moe" target="_blank">Website9</a></div>
+
+            <div class="grid-item item1"><a href="https://lblend.moe" target="_blank">Website10</a></div>
+            <div class="grid-item item2"><a href="https://lblend.moe" target="_blank">Website11</a></div>
+            <div class="grid-item item3"><a href="https://lblend.moe" target="_blank">Website12</a></div>
+
+            <div class="grid-item item1"><a href="https://lblend.moe" target="_blank">Website13</a></div>
+            <div class="grid-item item2"><a href="https://lblend.moe" target="_blank">Website14</a></div>
+            <div class="grid-item item3"><a href="https://lblend.moe" target="_blank">Website15</a></div>
+          </div>
+
+          <form action="javascript:;" onsubmit="searchURL()">
+            <input class="searchField" id="searchTxt" type="text" placeholder="Search..." name="search" autofocus>
+          </form>
+    </body>
+</html>
