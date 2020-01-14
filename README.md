@@ -1,6 +1,6 @@
-# Personal-Homepages
+# Homepage-Templates
 
-A collection of personal homepage templates I've made for personal use
+A collection of homepage templates I've made for personal use
 
 [Demo](https://lblend.github.io/Personal-Homepages/templates/1/index.html)
 
